@@ -1,0 +1,70 @@
+.navbar {
+    background-color: var(--background-bars);
+    padding: 0.25rem 2rem;
+    color: var(--light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    border-bottom: 1px solid;
+    border-color: var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar .left {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-height: 50px;
+}
+
+.navbar .link {
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar .link .logo {
+    max-width: 50px;
+}
+
+.navbar .link .raddit-title {
+    color: var(--logo);
+    font-size: 2rem;
+    font-family:Arial, Helvetica, sans-serif
+}
+.navbar .link .raddit-title:hover {
+    color: var(--logo-dark);
+}
+
+.navbar .login {
+    background-color: var(--logo);
+    color: var(--light);
+}
+
+.navbar .login:hover {
+    background-color: var(--logo-dark);
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar .profile .profile-link {
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+.navbar .profile .profile-link:hover {
+    color: var(--logo-dark);
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}

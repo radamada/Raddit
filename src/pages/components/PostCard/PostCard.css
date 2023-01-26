@@ -1,0 +1,109 @@
+.post-card {
+    border-radius: .5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem 2rem;
+    background-color: var(--background-bars);
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-card .details-wrapper {
+    width: 100%;
+}
+
+.post-card .details-wrapper .post-user-since {
+    color: var(--text-grey-dark);
+    font-size: 12px;
+}
+
+.post-card .details-wrapper .post-description {
+    color: var(--text-grey-light);
+    font-size: 18px;
+}
+
+.post-card .image {
+    max-width: 600px;
+    max-height: 520px;
+    object-fit: cover;
+}
+
+.post-card .buttons {
+    display: flex;
+    justify-content:center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.post-card .buttons .like {
+    background-color: var(--logo);
+    color: var(--light);
+}
+
+.post-card .buttons .dislike {
+    background-color: var(--logo);
+    color: var(--light);
+}
+
+.post-card .buttons .follow {
+    background-color: var(--logo);
+    color: var(--light);
+}
+
+.post-card .buttons .comments {
+    background-color: var(--logo);
+    color: var(--light);
+}
+
+.post-card .buttons .like:hover {
+    background-color: var(--logo-dark);
+}
+
+.post-card .buttons .dislike:hover {
+    background-color: var(--logo-dark);
+}
+
+.post-card .buttons .follow:hover {
+    background-color: var(--logo-dark);
+}
+
+.post-card .buttons .comments:hover {
+    background-color: var(--logo-dark);
+}
+
+@media screen and (max-width: 750px) {
+    .post-card {
+        width: 400px;
+    }
+
+    .post-card .image {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .post-card {
+        width: 300px;
+    }
+
+    .post-card .image {
+        max-width: 280px;
+    }
+
+    .post-card .buttons {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .post-card {
+        width: 200px;
+    }
+
+    .post-card .image {
+        max-width: 180px;
+    }
+}

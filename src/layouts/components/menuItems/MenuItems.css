@@ -1,0 +1,123 @@
+.menu-items {
+    position: relative;
+    width: 320px;
+    background-color: var(--background-bars);
+}
+
+.menu-items .feeds {
+    padding: 2rem 1rem 0;
+}
+
+.menu-items .feeds .feeds-label {
+    color: var(--text-grey-dark);
+    font-size: 11px;
+    padding: 0 0.5rem;
+}
+
+.menu-items .feeds .feeds-list {
+    padding: 0 0.5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menu-items .feeds .feeds-list .feed .link {
+    color: var(--text-grey-light);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+}
+
+.menu-items .feeds .feeds-list .feed .link .icon-wrapper {
+    width:1rem;
+}
+
+.menu-items .feeds .feeds-list .feed .link .link-name {
+    padding: 0 0.5rem;
+}
+
+.menu-items .feeds .feeds-list .feed .link:hover {
+    color: var(--secondary)
+}
+
+
+.menu-items .topics {
+    padding: 1rem;
+}
+
+.menu-items .topics .topics-label {
+    color: var(--text-grey-dark);
+    font-size: 11px;
+    padding: 0 0.5rem;
+}
+
+.menu-items .topics .topics-list {
+    padding: 0 0.5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menu-items .topics .topics-list .topic .link {
+    color: var(--text-grey-light);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+}
+
+.menu-items .topics .topics-list .topic .link:hover {
+    color: var(--secondary)
+}
+
+.menu-items .topics .topics-list .topic .link .icon-wrapper {
+    width:1rem;
+}
+
+.menu-items .topics .topics-list .topic .link .link-name {
+    padding: 0 0.5rem;
+}
+
+@media screen and (max-width: 1250px) {
+    .menu-items .feeds .feeds-list .feed .link .link-name {
+        display: none;
+    }
+
+    .menu-items .topics .topics-list .topic .link .link-name {
+        display: none;
+    }
+
+
+    .menu-items .topics .topics-label {
+        display: none;
+    }
+
+    .menu-items .feeds .feeds-label {
+        display: none;
+    }
+
+    .menu-items {
+        width: 64px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu-items .feeds .feeds-list .feed .link .link-name {
+        display: flex;
+    }
+
+    .menu-items .topics .topics-list .topic .link .link-name {
+        display: flex;
+    }
+
+    .menu-items .topics .topics-label {
+        display: flex;
+    }
+
+    .menu-items .feeds .feeds-label {
+        display: flex;
+    }
+}

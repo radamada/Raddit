@@ -1,0 +1,49 @@
+.followed-posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-feed);
+    gap: 1rem;
+    padding: 2rem 0 0 320px;
+    width: 100%;
+}
+
+.followed-posts-container .followed-data {
+    width: 75%;
+    padding: 0 0 1rem;
+}
+
+.followed-posts-container .followed-data .followed-data-title {
+    font-size: 2rem;
+    color: var(--text-grey-light);
+}
+
+.followed-posts-container .no-followed-posts {
+    font-size: 2.5rem;
+    color: var(--text-grey-light);
+    height: 100vh;
+}
+
+@media screen and (max-width: 1100px) {
+    .followed-posts-container {
+        padding-left: 64px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .followed-posts-container {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .followed-posts-container .no-followed-posts {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .followed-posts-container .no-followed-posts {
+        font-size: 1rem;
+    }
+}
